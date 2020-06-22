@@ -1,0 +1,12 @@
+name: gatk IndexFeatureFile
+description: |
+  Run gatk IndexFeatureFile.
+authors:
+  - Mike Sauria
+input:
+  - GVCF file
+output:
+  - GVCF file index
+notes: |
+  * The `java_opts` param allows for additional arguments to be passed to the java compiler, e.g. "-Xmx4G" for one, and "-Xmx4G -XX:ParallelGCThreads=10" for two options.
+  * For more inforamtion see, https://software.broadinstitute.org/gatk/documentation/article?id=11050

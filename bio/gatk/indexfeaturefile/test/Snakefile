@@ -1,0 +1,11 @@
+rule index_gvcf:
+    input:
+        "calls/a.g.vcf"
+    output:
+        "calls/a.g.vcf.tbi"
+    log:
+        "logs/gatk/indexfeaturefile.log"
+    params:
+        java_opts="",  # optional
+    wrapper:
+        "master/bio/gatk/indexfeaturefile"
